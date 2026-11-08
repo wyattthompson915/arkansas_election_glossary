@@ -1,0 +1,23 @@
+Federal: 
+
+    U.S. House Elections
+
+    U.S. Senate Elections
+
+    U.S. Presidential Elections 
+
+State:
+
+    Gubernatorial Elections 
+        + other statewide exectuive elections
+
+    State Legislature Elections 
+
+Local:
+
+    County Judge Elections 
+        + other countywide elections
+
+    Justice of the Peace Elections
+
+

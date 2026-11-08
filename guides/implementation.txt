@@ -1,0 +1,6 @@
+Phase 1:
+
+Initial frontend based w/U.S. Senate Elections 
+    Figure out best way to store data
+
+Display interactive map for 1996 U.S. Senate Election 
