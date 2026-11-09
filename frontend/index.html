@@ -31,9 +31,15 @@
     // Available elections per category: { year: [{ name, href }] }
     const ELECTIONS = {
       federal: {
-        1996: [{ name: "Senate", href: "map.html?year=1996&race=U.S.%20SENATE" }],
+        1996: [
+          { name: "President", href: "map.html?year=1996&race=U.S.%20PRESIDENT%20%26%20VICE%20PRESIDENT" },
+          { name: "Senate", href: "map.html?year=1996&race=U.S.%20SENATE" },
+          { name: "House", href: "map.html?year=1996&race=U.S.%20HOUSE" },
+        ],
       },
-      state: {},
+      state: {
+        1996: [{ name: "Lt. Governor", href: "map.html?year=1996&race=LIEUTENANT%20GOVERNOR" }],
+      },
       local: {},
     };
 

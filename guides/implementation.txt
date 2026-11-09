@@ -4,3 +4,17 @@ Initial frontend based w/U.S. Senate Elections
     Figure out best way to store data
 
 Display interactive map for 1996 U.S. Senate Election 
+
+
+Phase 2:
+
+Now that that is set up, use the 1996 excel file to add other statewide results for that year 
+    President & Lt. Gov.
+
+
+Phase 3:
+
+Get 1990's Congressional shapefiles
+    attempt basic mapping
+
+Then map 1996 U.S. House Elections -- same formatting as other 1996 elections
