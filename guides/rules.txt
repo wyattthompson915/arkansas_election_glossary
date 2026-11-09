@@ -1,0 +1,4 @@
+Rules for Claude
+
+1. do not include additions I did not specifically ask for; I want this to be my project with you just doing the dirty work
+2. for any potential improvements, ask me first. 

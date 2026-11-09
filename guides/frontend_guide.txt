@@ -1,0 +1,12 @@
+Home Page (index.html)
+
+- headers
+    - Federal Elections
+    - State Elections 
+    - Local Elections
+
+- text grid layout under each header
+    - listed available years to choose from
+    - under each year, listed available elections in that category
+        (e.g., Senate being listed under 1996 under Federal Elections)
+    - clicking on that election takes you to the map 

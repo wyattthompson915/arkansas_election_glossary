@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arkansas Election Glossary</title>
+  <style>
+    body { margin: 0; padding: 16px 24px; font-family: system-ui, sans-serif; }
+    h2 { font-size: 20px; margin: 24px 0 8px; border-bottom: 1px solid #ccc; padding-bottom: 4px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px 24px; }
+    .grid h3 { font-size: 16px; margin: 0 0 4px; }
+    .grid ul { list-style: none; margin: 0; padding: 0; }
+    .grid li { margin: 2px 0; }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>Federal Elections</h2>
+    <div class="grid" id="federal"></div>
+  </section>
+  <section>
+    <h2>State Elections</h2>
+    <div class="grid" id="state"></div>
+  </section>
+  <section>
+    <h2>Local Elections</h2>
+    <div class="grid" id="local"></div>
+  </section>
+
+  <script>
+    // Available elections per category: { year: [{ name, href }] }
+    const ELECTIONS = {
+      federal: {
+        1996: [{ name: "Senate", href: "map.html?year=1996&race=U.S.%20SENATE" }],
+      },
+      state: {},
+      local: {},
+    };
+
+    for (const [category, years] of Object.entries(ELECTIONS)) {
+      const grid = document.getElementById(category);
+      for (const year of Object.keys(years).sort()) {
+        const col = document.createElement("div");
+        col.innerHTML = `<h3>${year}</h3><ul>` +
+          years[year].map(e => `<li><a href="${e.href}">${e.name}</a></li>`).join("") + "</ul>";
+        grid.appendChild(col);
+      }
+    }
+  </script>
+</body>
+</html>
